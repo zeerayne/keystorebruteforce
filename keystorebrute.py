@@ -136,7 +136,7 @@ def printStatus(
     # Every 1% of increase in the progress bar, calculate the ETA (avoid calculate on each iteration)
     seta = "?pps, ETA: ?"
     if recalculateETA:
-        seta = getSpeedAdnETA(start, iteration, total)
+        seta = getSpeedAndETA(start, iteration, total)
     else:
         seta = lastseta
 
@@ -153,7 +153,7 @@ def printStatus(
     return seta
 
 
-def getSpeedAdnETA(start, iteration, total):
+def getSpeedAndETA(start, iteration, total):
     seconds_in_day = 86400
     seconds_in_hour = 3600
     seconds_in_minute = 60
