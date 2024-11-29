@@ -4,11 +4,16 @@ Summary
 -------
 Script to brute force and dictionary attack a Java keystore file.
 
-Required Libraries
+Installation
 ------------------
 
-* termcolor (sudo pip install termcolor)
-* pyjks     (sudo pip install pyjks)
+[Poetry](https://python-poetry.org) required to run this script
+
+To install dependencies run:
+
+```sh
+poetry install
+```
 
 Google Dorks
 ------------
@@ -19,6 +24,12 @@ To find some .keystores you can use Google Dorks like this:
 
 Usage
 -----
+
+To use script run:
+```sh
+poetry run python keystorebrute.py
+```
+
 ```
 Usage: keystorebrute.py [options]
 
@@ -140,5 +151,3 @@ XVxCYwPBSB2Hbn2nv4sjtzI+hJI0ukoLJfpc7f570wL80ByCZvlL1U5Uzl2Eku5o
 ********* END KEY STORE CERTIFICATES *********
 
 ```
-
-

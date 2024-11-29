@@ -58,3 +58,6 @@ target/
 
 tests/
 output/
+
+# IDEs
+.vscode
